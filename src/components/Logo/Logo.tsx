@@ -1,0 +1,72 @@
+const Logo = () => {
+  return (
+    <div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="124"
+        height="139"
+        viewBox="0 0 124 139"
+        fill="none"
+      >
+        <g filter="url(#filter0_d_16_266)">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M109.526 18.1281C109.526 20.8933 107.284 23.135 104.519 23.135H19.9268C17.1616 23.135 14.92 20.8933 14.92 18.1281C14.92 15.3629 17.1616 13.1212 19.9269 13.1212H104.519C107.284 13.1212 109.526 15.3629 109.526 18.1281Z"
+            fill="white"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M109.526 118.764C109.526 121.529 107.284 123.771 104.519 123.771H19.9268C17.1616 123.771 14.92 121.529 14.92 118.764C14.92 115.999 17.1616 113.757 19.9268 113.757H104.519C107.284 113.757 109.526 115.999 109.526 118.764Z"
+            fill="white"
+          />
+          <path
+            d="M72.8662 18.1281L33.8412 67.276L72.8662 119.934"
+            stroke="white"
+            stroke-width="8"
+          />
+        </g>
+        <defs>
+          <filter
+            id="filter0_d_16_266"
+            x="0.919973"
+            y="0.121216"
+            width="122.606"
+            height="138.65"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"
+            />
+            <feOffset dy="1" />
+            <feGaussianBlur stdDeviation="7" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.55 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="BackgroundImageFix"
+              result="effect1_dropShadow_16_266"
+            />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="effect1_dropShadow_16_266"
+              result="shape"
+            />
+          </filter>
+        </defs>
+      </svg>
+    </div>
+  );
+};
+
+export default Logo;

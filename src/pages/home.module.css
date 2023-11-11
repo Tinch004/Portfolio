@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "Preahvihear"; /* Nombre de la fuente */
+  src: url("../utils/Preahvihear-Regular.ttf") format("truetype"); /* Ruta al archivo TTF */
+  /* Puedes agregar más formatos si lo deseas, como EOT o SVG */
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  border-color: 100px rgb(249, 249, 249);
+}
+
+.yo {
+  position: relative;
+  right: 35px;
+  width: 150px; /* Ajusta el ancho según el tamaño de tu imagen */
+  height: auto; /* Mantén la relación de aspecto original */
+  display: inline-block;
+  margin: 20px; /* Ajusta el margen según tus preferencias */
+}
+
+.image_container {
+  position: relative;
+  width: 200px; /* Ajusta el ancho según el tamaño de tu imagen */
+  height: auto; /* Mantén la relación de aspecto original */
+  display: inline-block;
+  margin: 20px; /* Ajusta el margen según tus preferencias */
+}
+
+.shadow {
+  position: absolute;
+  top: 130px; /* Ajusta el desplazamiento vertical de la sombra según tus preferencias */
+  left: 45px; /* Ajusta el desplazamiento horizontal de la sombra según tus preferencias */
+  width: 10%;
+  height: 10%;
+  border-radius: 1000px;
+  z-index: -1; /* Coloca la sombra detrás de la imagen */
+  -webkit-box-shadow: 0px 2px 140px 99px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 0px 2px 140px 99px rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 140px 50px rgba(255, 255, 255, 1);
+}
+
+.shadow2 {
+  position: absolute;
+  top: 130px; /* Ajusta el desplazamiento vertical de la sombra según tus preferencias */
+  left: 45px; /* Ajusta el desplazamiento horizontal de la sombra según tus preferencias */
+  width: 10%;
+  height: 10%;
+  border-radius: 1000px;
+  z-index: -2; /* Coloca la sombra detrás de la imagen */
+  -webkit-box-shadow: 0px 2px 140px 99px #320f85;
+  -moz-box-shadow: 0px 2px 140px 99px #320f85;
+  box-shadow: 0px 2px 140px 99px #320f85;
+}
+
+.container_name {
+  font-family: Preahvihear;
+  margin: 0;
+  text-align: left;
+}
+
+.container {
+  display: flex;
+  margin-top: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.bluetext {
+  color: #7127ba;
+}
+
+.container_about {
+  margin-top: 100px;
+  font-family: Preahvihear;
+  text-align: left;
+  line-height: 40px;
+}
+
+.container_about p {
+  width: 100%;
+  color: white;
+  font-size: 22px;
+  font-family: Preahvihear;
+  font-weight: 400;
+  letter-spacing: 1px;
+  word-wrap: break-word;
+}
+.container_about h1 {
+  line-height: 100px;
+  width: 70%;
+}
+
+.containText {
+  margin-bottom: 50px;
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.text1 {
+  color: white;
+  font-size: 24px;
+  font-family: Preahvihear;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0.48px;
+  word-wrap: break-word;
+}
+
+.text2 {
+  color: white;
+  font-size: 17px;
+  font-family: Preahvihear;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0.34px;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column; /* Cambiado a columna en pantallas pequeñas */
+  }
+
+  .menu-button {
+    display: block; /* Mostrar el botón del menú */
+  }
+
+  .nav-links {
+    display: none; /* Ocultar los enlaces del menú */
+  }
+}

@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Plus Jakarta Sans'; /* Nombre de la fuente */
+    src:  url('../../utils/PlusJakartaSans-VariableFont_wght.ttf') format('truetype'); /* Ruta al archivo TTF */
+    /* Puedes agregar más formatos si lo deseas, como EOT o SVG */
+  }
+
+.navbar {
+    background-color: #1A0B2E;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .right {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar .right h4 {
+    margin-left: 10px;
+    margin-right: 10px;
+  padding-inline-end: 100px;
+  font-family: Plus Jakarta Sans;
+  font-weight: 500;
+  cursor: pointer; /* Cambia el cursor al pasar el mouse por encima */
+  color: white;
+  position: relative; /* Establece una posición relativa para crear la sombra */
+  transition: text-shadow 0.3s;
+ 
+  }
+  
+  .navbar h4:hover {
+    text-shadow: 0 0 50px rgb(255, 255, 255); /* Agrega una sombra blanca al pasar el mouse por encima */
+  }
+
+  .logo { 
+    display: flex;
+    padding-left: 5%;
+    align-items: center;
+  }
+  
+  /* Estilos para pantallas medianas (mayor o igual a 481px de ancho y hasta 768px de ancho) */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Cambia la dirección de flexbox a columna */
+      align-items: center; /* Centra los elementos verticalmente */
+      text-align: center; /* Centra el texto horizontalmente */
+    }
+  
+    .navbar .right {
+      margin-top: 10px; /* Espacio entre el logo y los elementos de navegación */
+    }
+  
+    .navbar .right h3 {
+      margin: 5px 0; /* Espacio entre los elementos h3 */
+    }
+  
+    .logo {
+      padding-left: 0;
+    }
+  }
+  
+  /* Estilos para pantallas pequeñas (menor o igual a 480px de ancho) */
+  @media screen and (max-width: 320px) {
+    .navbar {
+      flex-direction: column; /* Cambia la dirección de flexbox a columna */
+      align-items: center; /* Centra los elementos verticalmente */
+      text-align: center; /* Centra el texto horizontalmente */
+    }
+  
+    .navbar .right {
+      margin-top: 10px; /* Espacio entre el logo y los elementos de navegación */
+    }
+  
+    .navbar .right h3 {
+      margin: 5px 0; /* Espacio entre los elementos h3 */
+    }
+  
+    .logo {
+      padding-left: 0;
+    }
+  }
+  

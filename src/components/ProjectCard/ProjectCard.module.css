@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Poppins"; /* Nombre de la fuente */
+  src: url("../../utils/Poppins-Medium.ttf") format("truetype"); /* Ruta al archivo TTF */
+  /* Puedes agregar más formatos si lo deseas, como EOT o SVG */
+}
+
+.texto {
+  font-family: Poppins;
+}
