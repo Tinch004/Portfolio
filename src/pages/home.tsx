@@ -3,6 +3,8 @@ import ProjectCard from "../components/ProjectCard/ProjectCard";
 import Tecnolgias from "../components/Tecnologias/Tecnologias";
 import styles from "./home.module.css";
 const Home = () => {
+
+
   return (
     <div className={styles.home}>
       <NavBar />
@@ -39,6 +41,7 @@ const Home = () => {
       <div style={{ width: '100%', color: 'white', fontSize: 50, fontFamily: 'Preahvihear', fontWeight: '400', letterSpacing: 1, wordWrap: 'break-word' }}>Projects</div>
 
       <ProjectCard />
+
     </div>
   );
 };
