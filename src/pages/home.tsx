@@ -1,16 +1,28 @@
+import { useRef } from "react";
 import NavBar from "../components/NavBar/NavBar";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 import Tecnolgias from "../components/Tecnologias/Tecnologias";
 import styles from "./home.module.css";
 const Home = () => {
 
+  const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
+  const homeRef = useRef(null);
 
   return (
-    <div className={styles.home}>
-      <NavBar />
-      <div className={styles.container}>
+    <div className={styles.home} >
+      <NavBar
+        scrollToAbout={aboutRef}
+        scrollToProjects={projectsRef}
+        scrollToContact={contactRef}
+        scrollToHome={homeRef}
+      />
+
+      <div className={styles.container} ref={homeRef}>
         <div className={styles.image_container}>
           <img
+            ref={homeRef}
             className={styles.yo}
             src="src\utils\martinmac-removebg.png "
             alt=""
@@ -38,7 +50,7 @@ const Home = () => {
       </div>
       <div className={styles.containText}><span className={styles.text1}>I'm currently looking to join a cross-functional team<br /></span><span className={styles.text2}>that values improving people's lives through accessible design </span></div>
       <Tecnolgias />
-      <div style={{ width: '100%', color: 'white', fontSize: 50, fontFamily: 'Preahvihear', fontWeight: '400', letterSpacing: 1, wordWrap: 'break-word' }}>Projects</div>
+      <div ref={projectsRef} style={{ width: '100%', color: 'white', fontSize: 50, fontFamily: 'Preahvihear', fontWeight: '400', letterSpacing: 1, wordWrap: 'break-word' }}>Projects</div>
 
       <ProjectCard />
 
