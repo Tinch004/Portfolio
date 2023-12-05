@@ -7,3 +7,152 @@
 .texto {
   font-family: Poppins;
 }
+
+/* ProjectCard.module.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.gradientBackground {
+  background-image: radial-gradient(
+    50% 50% at 50% 50%,
+    #763cac 0%,
+    rgba(50, 15, 133, 0) 100%
+  );
+}
+
+.projectImageContainer {
+  width: 582.88px;
+  height: 341px;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 29px;
+}
+
+.projectImageContainer .innerContainer {
+  width: 582.88px;
+  height: 341px;
+  position: absolute;
+}
+
+.projectImageContainer .innerContainer .background1 {
+  width: 582.88px;
+  height: 341px;
+  background: #2b215a;
+  border-radius: 10px;
+}
+
+.projectImageContainer .innerContainer .background2 {
+  width: 642.64px;
+  height: 380.17px;
+  position: absolute;
+  background: #2b0b3a;
+  border-radius: 10px;
+}
+
+.projectImageContainer img {
+  width: 568px;
+  height: 354px;
+  position: absolute;
+  border-radius: 15px;
+}
+
+.descriptionContainer {
+  width: 669px;
+  height: 165px;
+  position: absolute;
+}
+
+.descriptionContainer .innerContainer {
+  width: 669px;
+  height: 165px;
+  position: absolute;
+  border-radius: 14px;
+  backdrop-filter: blur(80px);
+}
+
+.descriptionContainer .innerContainer .background {
+  width: 669px;
+  height: 165px;
+  background: radial-gradient(
+    43.45% 36.33% at 31.24% 29.39%,
+    rgba(104.78, 58.65, 146.62, 0.2) 0%,
+    rgba(109.97, 190.8, 244.37, 0.04) 77%,
+    rgba(69.95, 144.07, 212.5, 0) 100%
+  );
+  border-radius: 14px;
+  backdrop-filter: blur(80px);
+}
+
+.descriptionContainer .innerContainer .background2 {
+  width: 669px;
+  height: 165px;
+  background: radial-gradient(
+    43.45% 36.33% at 31.24% 29.39%,
+    rgba(104.78, 58.65, 146.62, 0.2) 0%,
+    rgba(109.97, 190.8, 244.37, 0.04) 77%,
+    rgba(69.95, 144.07, 212.5, 0) 100%
+  );
+  border-radius: 14px;
+  backdrop-filter: blur(80px);
+}
+
+.texto {
+  left: 32px;
+  top: 126px;
+  position: absolute;
+  color: #ccd6f6;
+  font-size: 18px;
+  font-family: "Poppins";
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+.title {
+  left: 0;
+  top: 19px;
+  position: absolute;
+  color: #ccd6f6;
+  font-size: 34px;
+  font-family: "Poppins";
+  font-weight: 600;
+  letter-spacing: 0.68px;
+  word-wrap: break-word;
+}
+
+.featuredProject {
+  left: 0;
+  top: 0;
+  position: absolute;
+  color: #9857d3;
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: 600;
+  letter-spacing: 0.32px;
+  word-wrap: break-word;
+}
+
+.icons {
+  width: 31px;
+  height: 31px;
+  position: absolute;
+}
+
+.icons.icon1 {
+  left: 73px;
+  top: 302px;
+}
+
+.icons.icon2 {
+  left: 25px;
+  top: 301px;
+}

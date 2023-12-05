@@ -3,26 +3,30 @@ import NavBar from "../components/NavBar/NavBar";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 import Tecnolgias from "../components/Tecnologias/Tecnologias";
 import styles from "./home.module.css";
+
+
+
+
+
 const Home = () => {
 
-  const aboutRef = useRef(null);
-  const projectsRef = useRef(null);
-  const contactRef = useRef(null);
-  const homeRef = useRef(null);
+  const aboutRef = useRef<HTMLDivElement>(null);
+  const projectsRef = useRef<HTMLDivElement>(null);
+  const contactRef = useRef<HTMLDivElement>(null);
+  const homeRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div className={styles.home} >
+    <div className={styles.home} ref={homeRef} >
       <NavBar
         scrollToAbout={aboutRef}
         scrollToProjects={projectsRef}
         scrollToContact={contactRef}
         scrollToHome={homeRef}
       />
-
-      <div className={styles.container} ref={homeRef}>
-        <div className={styles.image_container}>
+      <div className={styles.container} >
+        <div className={styles.image_container} >
           <img
-            ref={homeRef}
+
             className={styles.yo}
             src="src\utils\martinmac-removebg.png "
             alt=""
@@ -32,12 +36,12 @@ const Home = () => {
           <div className={styles.shadow2}></div>
         </div>
 
-        <div className={styles.container_name}>
+        <div className={styles.container_name} >
           <h1>Hello! I Am</h1>
           <h1 className={styles.bluetext}>Martin Bruno</h1>
         </div>
       </div>
-      <div className={styles.container_about}>
+      <div className={styles.container_about} ref={aboutRef}>
         <h1>I'm Fullstack Web Developer</h1>
 
         <p>
@@ -53,6 +57,7 @@ const Home = () => {
       <div ref={projectsRef} style={{ width: '100%', color: 'white', fontSize: 50, fontFamily: 'Preahvihear', fontWeight: '400', letterSpacing: 1, wordWrap: 'break-word' }}>Projects</div>
 
       <ProjectCard />
+
 
     </div>
   );

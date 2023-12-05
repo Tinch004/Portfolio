@@ -8,7 +8,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  width: 900px;
+  max-width: 900px;
   border-color: 100px rgb(249, 249, 249);
 }
 
@@ -119,18 +119,4 @@
   line-height: 31px;
   letter-spacing: 0.34px;
   word-wrap: break-word;
-}
-
-@media screen and (max-width: 600px) {
-  .container {
-    flex-direction: column; /* Cambiado a columna en pantallas pequeñas */
-  }
-
-  .menu-button {
-    display: block; /* Mostrar el botón del menú */
-  }
-
-  .nav-links {
-    display: none; /* Ocultar los enlaces del menú */
-  }
 }

@@ -4,7 +4,7 @@ import styles from './ProjectCard.module.css'
 const ProjectCard = () => {
     return (
 
-        <div style={{ justifyContent: 'center', alignItems: 'center', }}>
+        <div style={{ justifyContent: 'center', alignItems: 'center' }}>
             <div style={{ width: '100%', height: '100%', position: 'relative' }}>
 
 
