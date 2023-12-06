@@ -8,8 +8,16 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  max-width: 900px;
+
+  align-items: center;
   border-color: 100px rgb(249, 249, 249);
+}
+.projects {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 100px;
 }
 
 .yo {
@@ -19,6 +27,8 @@
   height: auto; /* Mantén la relación de aspecto original */
   display: inline-block;
   margin: 20px; /* Ajusta el margen según tus preferencias */
+  max-width: 900px; /* Ajusta según sea necesario */
+  margin: 0 auto; /* Esto centrará el elemento horizontalmente */
 }
 
 .image_container {
@@ -77,6 +87,7 @@
   font-family: Preahvihear;
   text-align: left;
   line-height: 40px;
+  max-width: 900px; /* Ajusta según sea necesario */
 }
 
 .container_about p {

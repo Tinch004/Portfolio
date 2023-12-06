@@ -10,10 +10,10 @@ import styles from "./home.module.css";
 
 const Home = () => {
 
-  const aboutRef = useRef<HTMLDivElement>(null);
-  const projectsRef = useRef<HTMLDivElement>(null);
-  const contactRef = useRef<HTMLDivElement>(null);
-  const homeRef = useRef<HTMLDivElement>(null);
+  const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
+  const homeRef = useRef(null);
 
   return (
     <div className={styles.home} ref={homeRef} >
@@ -54,9 +54,14 @@ const Home = () => {
       </div>
       <div className={styles.containText}><span className={styles.text1}>I'm currently looking to join a cross-functional team<br /></span><span className={styles.text2}>that values improving people's lives through accessible design </span></div>
       <Tecnolgias />
-      <div ref={projectsRef} style={{ width: '100%', color: 'white', fontSize: 50, fontFamily: 'Preahvihear', fontWeight: '400', letterSpacing: 1, wordWrap: 'break-word' }}>Projects</div>
 
-      <ProjectCard />
+      <div className={styles.projects}>
+        <div ref={projectsRef} style={{ width: '100%', color: 'white', fontSize: 50, fontFamily: 'Preahvihear', fontWeight: '400', letterSpacing: 1, wordWrap: 'break-word' }}>Projects</div>
+
+        <ProjectCard />
+
+
+      </div>
 
 
     </div>

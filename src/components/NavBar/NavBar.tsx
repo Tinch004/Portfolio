@@ -1,4 +1,3 @@
-// NavBar.js
 import LogoNav from "../Logo/LogoNav";
 import styles from "./NavBar.module.css";
 
