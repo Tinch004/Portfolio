@@ -63,6 +63,13 @@
   margin-left: -100px;
 }
 
+.buttons {
+  margin-top: 30px;
+}
+.buttons img {
+  padding-right: 20px;
+}
+
 .der {
   margin-left: 500px;
 }

@@ -1,20 +1,25 @@
 import styles from './ProjectCard.module.css'
 
 
-const ProjectCard = () => {
+interface ProjectCardProps {
+    titulo: string;
+    descripcion: string;
+    imagen: string;
+}
+
+const ProjectCard: React.FC<ProjectCardProps> = ({ titulo, descripcion, imagen }) => {
     return (
         <div className={styles.container}>
 
             <div className={styles.izq}>
 
                 <div className={styles.featured}>Featured Project</div>
-                <div className={styles.title}>Hotel Hunt</div>
+                <div className={styles.title}>{titulo}</div>
                 <div className={styles.backgroundImage}>
 
 
-                    <div className={styles.description}> HotelHunt es una plataforma eficiente para buscar y reservar hoteles. Ofrece a los usuarios una experiencia personalizada con opciones de filtrado y pagos seguros. Los roles de usuario,
-                        administrador y superadministrador brindan funcionalidades adaptadas a cada necesidad.
-
+                    <div className={styles.description}>
+                        {descripcion}
                     </div>
                 </div>
 
@@ -30,7 +35,7 @@ const ProjectCard = () => {
 
             <div className={styles.der}><div className={styles.luz}></div>
                 <div className={styles.backgroundImageProject}>
-                    <img src="src\utils\Hotel Hunt.png" alt="" className={styles.image} />
+                    <img src={imagen} alt="" className={styles.image} />
                 </div>
 
 

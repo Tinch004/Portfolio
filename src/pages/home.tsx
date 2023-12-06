@@ -1,8 +1,8 @@
 import { useRef } from "react";
 import NavBar from "../components/NavBar/NavBar";
-import ProjectCard from "../components/ProjectCard/ProjectCard";
 import Tecnolgias from "../components/Tecnologias/Tecnologias";
 import styles from "./home.module.css";
+import Projects from "../components/Projects/Projects.tsx";
 
 
 
@@ -58,7 +58,7 @@ const Home = () => {
       <div className={styles.projects}>
         <div ref={projectsRef} style={{ width: '100%', color: 'white', fontSize: 50, fontFamily: 'Preahvihear', fontWeight: '400', letterSpacing: 1, wordWrap: 'break-word' }}>Projects</div>
 
-        <ProjectCard />
+        <Projects />
 
 
       </div>

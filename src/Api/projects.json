@@ -1,0 +1,26 @@
+{
+    "projects": [
+        {
+            "titulo": "Hotel Hunt",
+            "descripcion": "HotelHunt es una plataforma eficiente para buscar y reservar hoteles. Ofrece a los usuarios una experiencia personalizada con opciones de filtrado y pagos seguros. Los roles de usuario, administrador y superadministrador brindan funcionalidades adaptadas a cada necesidad.",
+            "descripcionIng": "",
+            "imagen": "ruta/a/la/imagen1.jpg",
+            "repoLink": "https://github.com/usuario/proyecto1",
+            "link": "https://proyecto1.com"
+        },
+        {
+            "titulo": "Proyecto 2",
+            "descripcion": "Descripción del Proyecto 2.",
+            "imagen": "ruta/a/la/imagen2.jpg",
+            "repoLink": "https://github.com/usuario/proyecto2",
+            "link": "https://proyecto2.com"
+        },
+        {
+            "titulo": "Proyecto 3",
+            "descripcion": "Descripción del Proyecto 3.",
+            "imagen": "ruta/a/la/imagen3.jpg",
+            "repoLink": "https://github.com/usuario/proyecto3",
+            "link": "https://proyecto3.com"
+        }
+    ]
+}
