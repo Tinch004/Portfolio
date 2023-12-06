@@ -13,13 +13,40 @@ interface Project {
 
 const Projects = () => {
 
+    const proyectos: Project[] = [
+        {
 
-    const [projects, setProjects] = useState<Project[]>([]);
+            id: 1,
+            titulo: "Hotel Hunt",
+            descripcion: "HotelHunt es una plataforma eficiente para buscar y reservar hoteles. Ofrece a los usuarios una experiencia personalizada con opciones de filtrado y pagos seguros. Los roles de usuario, administrador y superadministrador brindan funcionalidades adaptadas a cada necesidad.",
+            imagen: "ruta/a/la/imagen1.jpg",
+            link2: "https://github.com/usuario/proyecto1",
+            link1: "https://proyecto1.com"
+        },
+        {
+            id: 2,
+            titulo: "Proyecto 2",
+            descripcion: "Descripción del Proyecto 2.",
+            imagen: "ruta/a/la/imagen2.jpg",
+            link2: "https://github.com/usuario/proyecto2",
+            link1: "https://proyecto2.com"
+        },
+        {
+            id: 3,
+            titulo: "Proyecto 3",
+            descripcion: "Descripción del Proyecto 3.",
+            imagen: "ruta/a/la/imagen3.jpg",
+            link2: "https://github.com/usuario/proyecto3",
+            link1: "https://proyecto3.com"
+        }
+    ]
+
+
 
     const peticion = async () => {
         try {
-            const { data } = await axios.get<Project[]>('http://localhost:5000/projects')
-            setProjects(data)
+
+
         } catch (error) {
             console.log(error)
         }
@@ -33,7 +60,7 @@ const Projects = () => {
 
         <div>
             {
-                projects.map(project => {
+                proyectos.map(project => {
                     return (
                         <ProjectCard
                             key={project.id}
