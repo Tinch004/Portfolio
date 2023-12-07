@@ -3,6 +3,8 @@ import NavBar from "../components/NavBar/NavBar";
 import Tecnolgias from "../components/Tecnologias/Tecnologias";
 import styles from "./home.module.css";
 import Projects from "../components/Projects/Projects.tsx";
+import Particles2 from "../components/Particles/Particles.tsx";
+
 
 
 
@@ -17,6 +19,8 @@ const Home = () => {
 
   return (
     <div className={styles.home} ref={homeRef} >
+      <Particles2 />
+
       <NavBar
         scrollToAbout={aboutRef}
         scrollToProjects={projectsRef}
@@ -28,7 +32,7 @@ const Home = () => {
           <img
 
             className={styles.yo}
-            src="src\utils\martinmac-removebg.png "
+            src="https://res.cloudinary.com/dqyj6zstv/image/upload/v1701926545/martinmac-removebg_nlo9bw.png"
             alt=""
           />
           <div className={styles.shadow}></div>
