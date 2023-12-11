@@ -64,9 +64,9 @@ const Home = () => {
         <div ref={projectsRef} style={{ width: '100%', color: 'white', fontSize: 50, fontFamily: 'Preahvihear', fontWeight: '400', letterSpacing: 1, wordWrap: 'break-word' }}>Projects</div>
 
         <Projects />
-
-        <Contact />
-
+        <div ref={contactRef}>
+          <Contact />
+        </div>
 
       </div>
 
