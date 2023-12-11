@@ -1,0 +1,40 @@
+.container {
+  justify-content: start;
+  font-family: Poppins;
+  margin-top: 100px;
+  text-align: left;
+  padding: 50px;
+  max-width: 900px;
+}
+
+.contact {
+  color: #fff;
+  font-family: Preahvihear;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  margin-bottom: 100px;
+}
+
+.message {
+  color: #fff;
+  font-family: Preahvihear;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.3px;
+}
+
+.mail {
+  margin-top: 50px;
+  color: #fff;
+  font-family: Preahvihear;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.3px;
+}

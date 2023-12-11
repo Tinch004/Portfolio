@@ -4,6 +4,7 @@ import Tecnolgias from "../components/Tecnologias/Tecnologias";
 import styles from "./home.module.css";
 import Projects from "../components/Projects/Projects.tsx";
 import Particles2 from "../components/Particles/Particles.tsx";
+import Contact from "../components/Contact/Contact.jsx";
 
 
 
@@ -63,6 +64,8 @@ const Home = () => {
         <div ref={projectsRef} style={{ width: '100%', color: 'white', fontSize: 50, fontFamily: 'Preahvihear', fontWeight: '400', letterSpacing: 1, wordWrap: 'break-word' }}>Projects</div>
 
         <Projects />
+
+        <Contact />
 
 
       </div>

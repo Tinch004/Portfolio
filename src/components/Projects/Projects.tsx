@@ -21,7 +21,7 @@ const Projects = () => {
             descripcion: "HotelHunt es una plataforma eficiente para buscar y reservar hoteles. Ofrece a los usuarios una experiencia personalizada con opciones de filtrado y pagos seguros. Los roles de usuario, administrador y superadministrador brindan funcionalidades adaptadas a cada necesidad.",
             imagen: "https://res.cloudinary.com/dqyj6zstv/image/upload/v1701926545/Hotel_Hunt_ondmg0.png",
             link2: "https://github.com/usuario/proyecto1",
-            link1: "https://proyecto1.com"
+            link1: "https://hotelhunt.com.ar"
         },
         {
             id: 2,
@@ -67,6 +67,7 @@ const Projects = () => {
                             titulo={project.titulo}
                             descripcion={project.descripcion}
                             imagen={project.imagen}
+                            url={project.link1}
                         />
                     )
                 })
