@@ -25,11 +25,11 @@ const Projects = () => {
         },
         {
             id: 2,
-            titulo: "Proyecto 2",
-            descripcion: "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists ofrecommended tracks based on your existing playlists and more",
-            imagen: "https://res.cloudinary.com/dqyj6zstv/image/upload/v1701927256/Screenshot_2022-09-20_at_11.44_1_jsqsmi.png",
+            titulo: "Countries SPA",
+            descripcion: "Aplicacion web con un conjunto de características que incluyen: un buscador de países, filtros de actividades, continentes y ordenamiento, así como un formulario de creación de actividades y paginado en la pagina principal.",
+            imagen: "https://res.cloudinary.com/dqyj6zstv/image/upload/v1710880166/Desktop_Screenshot_2024.03.19_-_17.29.14.39_lks5qx.png",
             link2: "https://github.com/usuario/proyecto2",
-            link1: "https://proyecto2.com"
+            link1: "https://countries-3jps.onrender.com/"
         },
         {
             id: 3,
