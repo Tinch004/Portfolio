@@ -31,14 +31,7 @@ const Projects = () => {
             link2: "https://github.com/usuario/proyecto2",
             link1: "https://countries-3jps.onrender.com/"
         },
-        {
-            id: 3,
-            titulo: "Proyecto 3",
-            descripcion: "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists ofrecommended tracks based on your existing playlists and more",
-            imagen: "https://res.cloudinary.com/dqyj6zstv/image/upload/v1701927256/Screenshot_2022-09-20_at_11.44_1_jsqsmi.png",
-            link2: "https://github.com/usuario/proyecto3",
-            link1: "https://proyecto3.com"
-        }
+  
     ]
 
 
