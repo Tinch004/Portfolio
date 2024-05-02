@@ -29,7 +29,7 @@ const Tecnologias = () => {
           </Link>
 
           <Link to={'https://expressjs.com/es/'} target="_blank">
-            <img src="https://res.cloudinary.com/dqyj6zstv/image/upload/v1701926615/Rectangle_12_sgthg2.png" className={`${styles.icon} ${styles.lighten}`} style={{ left: '228px', top: '95px', }} alt="Icono" />
+            <img src="https://res.cloudinary.com/dqyj6zstv/image/upload/v1714686360/express-js_mxp6gt.png" className={`${styles.icon} ${styles.lighten}`} style={{ left: '230.5px', top: '81px', height:"11%"}} alt="Icono" />
           </Link>
 
           <Link to={'https://lenguajejs.com/javascript/'} target="_blank">
@@ -37,7 +37,7 @@ const Tecnologias = () => {
           </Link>
 
           <Link to={'https://nodejs.org/en'} target="_blank" className={styles.iconLink}>
-            <img src="https://res.cloudinary.com/dqyj6zstv/image/upload/v1701926615/Rectangle_4_x3rps8.png" className={styles.icon} style={{ left: '86px', top: '14px' }} alt="Icono" />
+            <img src="https://res.cloudinary.com/dqyj6zstv/image/upload/v1714685988/node-js_rdbhxp.svg" className={styles.icon} style={{ left: '89px', top: '9px', height:"10%" }} alt="Icono" />
           </Link>
         </div>
 

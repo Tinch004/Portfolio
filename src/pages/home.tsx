@@ -1,25 +1,19 @@
 import { useRef } from "react";
-import NavBar from "../components/NavBar/NavBar";
-import Tecnolgias from "../components/Tecnologias/Tecnologias";
+import NavBar from "../components/NavBar/NavBar.tsx";
+import Tecnolgias from "../components/Tecnologias/Tecnologias.tsx";
 import styles from "./home.module.css";
 import Projects from "../components/Projects/Projects.tsx";
 import Particles2 from "../components/Particles/Particles.tsx";
-import Contact from "../components/Contact/Contact.jsx";
-
-
-
-
-
+import Contact from "../components/Contact/Contact.js";
 
 const Home = () => {
-
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
   const homeRef = useRef(null);
 
   return (
-    <div className={styles.home} ref={homeRef} >
+    <div className={styles.home} ref={homeRef}>
       <Particles2 />
 
       <NavBar
@@ -28,10 +22,9 @@ const Home = () => {
         scrollToContact={contactRef}
         scrollToHome={homeRef}
       />
-      <div className={styles.container} >
-        <div className={styles.image_container} >
+      <div className={styles.container}>
+        <div className={styles.image_container}>
           <img
-
             className={styles.yo}
             src="https://res.cloudinary.com/dqyj6zstv/image/upload/v1701926545/martinmac-removebg_nlo9bw.png"
             alt=""
@@ -41,7 +34,7 @@ const Home = () => {
           <div className={styles.shadow2}></div>
         </div>
 
-        <div className={styles.container_name} >
+        <div className={styles.container_name}>
           <h1>Hello! I Am</h1>
           <h1 className={styles.bluetext}>Martin Bruno</h1>
         </div>
@@ -57,20 +50,38 @@ const Home = () => {
           adaptability
         </p>
       </div>
-      <div className={styles.containText}><span className={styles.text1}>I'm currently looking to join a cross-functional team<br /></span><span className={styles.text2}>that values improving people's lives through accessible design </span></div>
+      <div className={styles.containText}>
+        <span className={styles.text1}>
+          I'm currently looking to join a cross-functional team
+          <br />
+        </span>
+        <span className={styles.text2}>
+          that values improving people's lives through accessible design{" "}
+        </span>
+      </div>
       <Tecnolgias />
 
       <div className={styles.projects}>
-        <div ref={projectsRef} style={{ width: '100%', color: 'white', fontSize: 50, fontFamily: 'Preahvihear', fontWeight: '400', letterSpacing: 1, wordWrap: 'break-word' }}>Projects</div>
+        <div
+          ref={projectsRef}
+          style={{
+            width: "100%",
+            color: "white",
+            fontSize: 50,
+            fontFamily: "Preahvihear",
+            fontWeight: "400",
+            letterSpacing: 1,
+            wordWrap: "break-word",
+          }}
+        >
+          Projects
+        </div>
 
         <Projects />
         <div ref={contactRef}>
           <Contact />
         </div>
-
       </div>
-
-
     </div>
   );
 };

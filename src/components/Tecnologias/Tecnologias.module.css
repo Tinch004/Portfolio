@@ -73,8 +73,7 @@
 }
 
 .icon:hover {
-  box-shadow: 0 0 10px rgba(66, 30, 117, 0.8),
-    0 0 20px rgba(204, 182, 243, 0.733);
+  filter: drop-shadow(0 0 10px rgba(66, 30, 117, 0.8)) drop-shadow(0 0 20px rgba(204, 182, 243, 0.733));
 }
 
 .lighten {
